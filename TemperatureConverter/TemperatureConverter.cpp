@@ -32,5 +32,10 @@ int main() {
 		cout << "Your temperature in Fahrenheit is " << ((inputKelvin - 273.15) * 9 / 5 + 32) << "\370F" << endl;
 	}
 
+	else {
+		cout << "Invalid input. Please try again. \n";
+		main();
+	}
+
 	return 0;
 }
