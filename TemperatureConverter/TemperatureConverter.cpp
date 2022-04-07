@@ -28,8 +28,14 @@ int main() {
 		cin >> inputFarhenheit;
 		cout << "Your temperature in Celcius is " << ((inputFarhenheit - 32) * 5 / 9) << endl;
 		cout << "Your temperature in Kelvin is " << ((inputFarhenheit - 32) * 5 / 9) + 273.15 << endl;
-
 	}
 
+	else if (userInput == 'k') {
+		cout << "Enter the temperature in Kelvin: \n";
+		cin >> inputKelvin;
+		cout << "Your temperature in Celcius is " << (inputKelvin - 273.15) << endl;
+		cout << "Your temperature in Farhenheit is " << ((inputKelvin - 273.15) * 9 / 5 + 32) << endl;
+	}
 
+	return 0;
 }
