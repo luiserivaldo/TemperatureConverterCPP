@@ -19,11 +19,17 @@ int main() {
 	if (userInput == 'c') {
 		cout << "Enter the temperature in Celcius: \n";
 		cin >> inputCelcius;
-		cout << "Your temperature in Farhenheit is " << (inputCelcius - 32) * (5.0 / 9.0) << endl;
+		cout << "Your temperature in Farhenheit is " << ((inputCelcius * 9 / 5) + 32) << endl;
 		cout << "Your temperature in Kelvin is " << (inputCelcius + 273.15) << endl;
 	}
 
+	else if (userInput == 'f') {
+		cout << "Enter the temperature in Farhenheit: \n";
+		cin >> inputFarhenheit;
+		cout << "Your temperature in Celcius is " << ((inputFarhenheit - 32) * 5 / 9) << endl;
+		cout << "Your temperature in Kelvin is " << ((inputFarhenheit - 32) * 5 / 9) + 273.15 << endl;
 
+	}
 
 
 }
